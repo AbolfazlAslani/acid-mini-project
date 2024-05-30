@@ -29,6 +29,10 @@ __decorate([
     __metadata("design:type", String)
 ], Wallet.prototype, "invoice_number", void 0);
 __decorate([
+    (0, typeorm_1.Column)({ type: "numeric" }),
+    __metadata("design:type", Number)
+], Wallet.prototype, "amount", void 0);
+__decorate([
     (0, typeorm_1.CreateDateColumn)(),
     __metadata("design:type", Date)
 ], Wallet.prototype, "created_at", void 0);
